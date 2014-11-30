@@ -4,7 +4,7 @@ FROM strider/strider-docker-slave
 
 USER root
 RUN \
-  apt-get install -y autoconf build-essential libreadline-dev libssl-dev libyaml-dev zlib1g-dev && \
+  apt-get install -y autoconf build-essential libreadline-dev libssl-dev libyaml-dev zlib1g-dev wget && \
   mkdir -p /tmp && \
   cd /tmp && \
   wget http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.5.tar.gz && \
